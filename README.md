@@ -35,3 +35,11 @@ _by Abdelmonem Khedr_
 
 ---
 ## Workflow & Commands
+1. Once you have made a change to your file, you have to make sure its is saved 
+2. Type in `git status` and you should see that your file as of now is untracked(red)
+3. Type `git add .` to add all file changes or type in `git add (filename)` just to add the changes for a specific file 
+4. Again type in `git status` and you should see that your file is now in the staging area(green)
+5. You can now commit a file by typing `git commit -m "(specific message)"` and you should write **a specific message to demonstrate what changes have been made**
+6. Know that you have a commit you can know push the changes up to the cloud. Type `git push` and you should see that your changes should have been pushed by going to [github.com](github.com) and clicking on your repo
+7. If `git push` did not work than most likely you didn't do the intial setup first (refer to _Intial Setup_)
+8. Always use **`git status`** . It tells you alot about where your files are and if they are ready to be commited or pushed 
