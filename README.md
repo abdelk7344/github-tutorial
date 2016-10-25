@@ -13,6 +13,7 @@ _by Abdelmonem Khedr_
 #### Github Account 
 1. Click the Sign Up botton and enter a username, email, and a password. Select a free account. 
 2. Go to your IDE (cloud 9) and press the gear icon . Go to _Connected Services_ and as you see github press connect.
+
 --- 
 #### SHS Key
 1. To make an SSH key go first to [github.com](github.com) and log in
