@@ -4,15 +4,18 @@ _by Abdelmonem Khedr_
 
 ---
 ## Git vs. GitHub
-* Git allows us to take a "snapshot" of our code and does not require the use of github
-* Github requires git and takes these snapshots and stores them in the cloud (a website) 
+* Git allows us to take "snapshots" of our code and does not require the use of github
+* Github requires git to function and takes these snapshots and stores them in the cloud (a website) 
 
 
 ---
 ## Initial Setup  
 #### Github Account 
 1. Click the Sign Up botton and enter a username, email, and a password. Select a free account. 
-2. Go to your IDE (cloud 9) and press the gear icon . Go to _Connected Services_ and as you see github press connect.
+2. Click the top right icon and go to settings,then go to SSH and GPG keys in personal settings.
+3. Copy the SSH key from github,then go to c9 and click on the gear icon on the top right.
+4. Paste the SSH key in the box.
+5. Go to your IDE (cloud 9) and press the gear icon . Go to _Connected Services_ and as you see github press connect.
 
 --- 
 #### SHS Key
@@ -35,7 +38,7 @@ _by Abdelmonem Khedr_
 6. Add this file to the staging area by typing `git add README.md` or `git add .`
 7. Commit this change by typing in `commit -m "(type here a specfic and informitive message to what you did to your file)"`
 8. Open a new tap and go to [github.com](github.com). Go to the top right corner and press the plus sign and in the drop down menu click _New Repository_
-9. **Give your repository name the same name you gave your repository in your IDE**
+9. **(Important!)** **Give your repository name the same name you gave your repository in your IDE**
 10. Click on *SHS* _(the tab next to **https**)_ and under where it says _"or push and existing an existing repository from the command line"_, copy each line one at a time and paste it in your IDE
 11. You have know connected your local repo to the cloud 
 
