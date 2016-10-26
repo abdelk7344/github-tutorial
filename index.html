@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>GitHub-tutorial by abdelk7344</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">GitHub-tutorial</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/abdelk7344/github-tutorial" class="btn">View on GitHub</a>
+      <a href="https://github.com/abdelk7344/github-tutorial/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/abdelk7344/github-tutorial/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Abdelmonem Khedr</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<ul>
+<li>Git allows us to take "snapshots" of our code and does not require the use of github</li>
+<li>Github requires git to function and takes these snapshots and stores them in the cloud (a website) </li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<h4>
+<a id="github-account" class="anchor" href="#github-account" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Github Account</h4>
+
+<ol>
+<li>Click the Sign Up botton and enter a username, email, and a password. Select a free account. </li>
+<li>Click the top right icon and go to settings,then go to SSH and GPG keys in personal settings.</li>
+<li>Copy the SSH key from github,then go to c9 and click on the gear icon on the top right.</li>
+<li>Paste the SSH key in the box.</li>
+<li>Go to your IDE (cloud 9) and press the gear icon . Go to <em>Connected Services</em> and as you see github press connect.</li>
+</ol>
+
+<hr>
+
+<h4>
+<a id="shs-key" class="anchor" href="#shs-key" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SHS Key</h4>
+
+<ol>
+<li>To make an SSH key go first to <a href="github.com">github.com</a> and log in</li>
+<li>On the top right, click on your profile icon and press settings </li>
+<li>On the left side bar, click "SHSS and GPG Keys"</li>
+<li>Create a new SHS key and give it a specfic and informtive title </li>
+<li>Get the SHS key from IDE. They usually starts with <strong>shs-sa</strong>. <em>( if using cloud9 then go to top right gear icon and press SHS key tab )</em>
+</li>
+<li>Paste your SHS into github and press <em>Add SHS</em> key</li>
+<li>Go to your IDE and type <code>shs -T git@github.com</code> ( you should get a message stating your username and some type of approval message )</li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<ol>
+<li>Go to your IDE and create a new foleder by typing <code>mkdir (foldername)</code>
+</li>
+<li>Intialzes git in that directory to make it a repository. You can do this by typing <code>git init</code>
+</li>
+<li>
+<code>cd</code> into that folder and create a "readme" file by typing <code>touch README.md</code>
+</li>
+<li>Open your file by clicking on it <em>(if you are in cloud 9 you can type <code>c9 (filename)</code> to open it directly)</em>
+</li>
+<li>Type a message in that file but make it relevant</li>
+<li>Add this file to the staging area by typing <code>git add README.md</code> or <code>git add .</code>
+</li>
+<li>Commit this change by typing in <code>commit -m "(type here a specfic and informitive message to what you did to your file)"</code>
+</li>
+<li>Open a new tap and go to <a href="github.com">github.com</a>. Go to the top right corner and press the plus sign and in the drop down menu click <em>New Repository</em>
+</li>
+<li>
+<strong>(Important!)</strong> <strong>Give your repository name the same name you gave your repository in your IDE</strong>
+</li>
+<li>Click on <em>SHS</em> <em>(the tab next to <strong>https</strong>)</em> and under where it says <em>"or push and existing an existing repository from the command line"</em>, copy each line one at a time and paste it in your IDE</li>
+<li>You have know connected your local repo to the cloud </li>
+</ol>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<ol>
+<li>Once you have made a change to your file, you have to make sure its is saved </li>
+<li>Type in <code>git status</code> and you should see that your file as of now is untracked(red)</li>
+<li>Type <code>git add .</code> to add all file changes or type in <code>git add (filename)</code> just to add the changes for a specific file </li>
+<li>Again type in <code>git status</code> and you should see that your file is now in the staging area(green)</li>
+<li>You can now commit a file by typing <code>git commit -m "(specific message)"</code> and you should write <strong>a specific message to demonstrate what changes have been made</strong>
+</li>
+<li>Know that you have a commit you can know push the changes up to the cloud. Type <code>git push</code> and you should see that your changes should have been pushed by going to <a href="github.com">github.com</a> and clicking on your repo</li>
+<li>If <code>git push</code> did not work than most likely you didn't do the intial setup first (refer to <em>Intial Setup</em>)</li>
+<li>Always use <strong><code>git status</code></strong> . It tells you alot about where your files are and if they are ready to be commited or pushed </li>
+</ol>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/abdelk7344/github-tutorial">GitHub-tutorial</a> is maintained by <a href="https://github.com/abdelk7344">abdelk7344</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
