@@ -56,13 +56,13 @@ _by Abdelmonem Khedr_
 ---
 ## Error Handeling 
 * If you type `git init` in the wrong dicrtory and intialize git, type `rm -rf.git` to unintialize git from the current direcctroy that you are in 
-* If in any case you want to delte your repo(local and remote)
-  1. Go to your IDE and in your repo type in `rm -rf.git` and this will delte your local
+* If in any case you want to delete your repo(local and remote)
+  1. Go to your IDE and in your repo type in `rm -rf.git` and this will delete your local
   2. Go to github and click your repo. Click _setting_ and go all they way down till you see **Delete this Repository** and go ahead and press delete and type the name of your repo. You have delted your remote.
 
 --- 
 ## Collaboration
-1. Go to the repository that you will be making modifications on 
+1. Go to the repository that you will be , after cloning, making modifications on 
 2. Click **Fork** on the top right under your icon
 3. After you **Fork** it, press the green **Clone or Download** button
 4. If its not already clicked of _SHS_ then click _SHS_
