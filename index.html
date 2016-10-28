@@ -112,6 +112,47 @@
 <li>Always use <strong><code>git status</code></strong> . It tells you alot about where your files are and if they are ready to be commited or pushed </li>
 </ol>
 
+<hr>
+
+<h2>
+<a id="error-handeling" class="anchor" href="#error-handeling" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Error Handeling</h2>
+
+<ul>
+<li>If you type <code>git init</code> in the wrong dicrtory and intialize git, type <code>rm -rf.git</code> to unintialize git from the current direcctroy that you are in </li>
+<li>If in any case you want to delete your repo(local and remote)
+
+<ol>
+<li>Go to your IDE and in your repo type in <code>rm -rf.git</code> and this will delete your local</li>
+<li>Go to github and click your repo. Click <em>setting</em> and go all they way down till you see <strong>Delete this Repository</strong> and go ahead and press delete and type the name of your repo. You have delted your remote.</li>
+</ol>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="collaboration" class="anchor" href="#collaboration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Collaboration</h2>
+
+<ol>
+<li>Go to the repository that you will be , after cloning, making modifications on </li>
+<li>Click <strong>Fork</strong> on the top right under your icon</li>
+<li>After you <strong>Fork</strong> it, press the green <strong>Clone or Download</strong> button</li>
+<li>If its not already clicked of <em>SHS</em> then click <em>SHS</em>
+</li>
+<li>Grap the url given to you and clone it in your IDE by typing <code>git clone (url)</code>
+</li>
+<li>
+<code>cd</code> in to that repo and make your modifications </li>
+<li>Add file by typing <code>git add .</code> or <code>git add (filename)</code>
+</li>
+<li>Commit it by typing <code>git commit -m (write a specific message on the change you made)</code>
+</li>
+<li>Write in <code>git push</code> after you have commmit your file. This will send it up to github.</li>
+<li>To make a pull go to <strong>your</strong> forked repo on github and press <em>New pull request</em> and type in a brief messgae on what you modified and send</li>
+<li>If the owner thinks the modifications were needed or beneficial he or she can accept the request or in other cases deny it</li>
+<li>If the owner accepts the pull request, they will have to return to their IDE and go into the repo and type in <code>git pull</code>. This will ensure that the changes are also on their local. </li>
+</ol>
+
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/abdelk7344/github-tutorial">GitHub-tutorial</a> is maintained by <a href="https://github.com/abdelk7344">abdelk7344</a>.</span>
 
