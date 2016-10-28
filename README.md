@@ -52,3 +52,25 @@ _by Abdelmonem Khedr_
 6. Know that you have a commit you can know push the changes up to the cloud. Type `git push` and you should see that your changes should have been pushed by going to [github.com](github.com) and clicking on your repo
 7. If `git push` did not work than most likely you didn't do the intial setup first (refer to _Intial Setup_)
 8. Always use **`git status`** . It tells you alot about where your files are and if they are ready to be commited or pushed 
+
+---
+## Error Handeling 
+* If you type `git init` in the wrong dicrtory and intialize git, type `rm -rf.git` to unintialize git from the current direcctroy that you are in 
+* If in any case you want to delte your repo(local and remote)
+  1. Go to your IDE and in your repo type in `rm -rf.git` and this will delte your local
+  2. Go to github and click your repo. Click _setting_ and go all they way down till you see **Delete this Repository** and go ahead and press delete and type the name of your repo. You have delted your remote.
+
+--- 
+## Collaboration
+1. Go to the repository that you will be making modifications on 
+2. Click **Fork** on the top right under your icon
+3. After you **Fork** it, press the green **Clone or Download** button
+4. If its not already clicked of _SHS_ then click _SHS_
+5. Grap the url given to you and clone it in your IDE by typing `git clone (url)`
+6. `cd` in to that repo and make your modifications 
+7. Add file by typing `git add .` or `git add (filename)`
+8. Commit it by typing `git commit -m (write a specific message on the change you made)`
+9. Write in `git push` after you have commmit your file. This will send it up to github.
+10. To make a pull go to **your** forked repo on github and press _New pull request_ and type in a brief messgae on what you modified and send
+11. If the owner thinks the modifications were needed or beneficial he or she can accept the request or in other cases deny it
+12. If the owner accepts the pull request, they will have to return to their IDE and go into the repo and type in `git pull`. This will ensure that the changes are also on their local. 
